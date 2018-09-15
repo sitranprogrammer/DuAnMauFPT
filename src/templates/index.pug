@@ -8,71 +8,89 @@ block variables
 
 //- Phần khai báo body
 block body
-	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	section.home-slider
-		.owl-carousel.owl-theme
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-news
-		.container
+	section.wapper-box
+		.container.home-shop
 			.row
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_1.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_2.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_3.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-clients.mt-5
-		.container
+				
 			.row
-				.col
-					.owl-carousel.owl-theme
-						- for(x=1;x<10;x++)
-							.item
-								if (x < 7)
-									img(src="./img/clients_"+x+".png", alt="")
-								else
-									img(src="./img/clients_"+(x-3)+".png", alt="")
+				.col-md-4
+					.row
+						.col-md-12
+							img.img-fluid(src="../img/home_section_nav_1.png", alt="", srcset="")
+							img.img-fluid(src="../img/home_section_nav_2.png", alt="", srcset="")
+							img.img-fluid(src="../img/home_section_nav_3.png", alt="", srcset="")
+							img.img-fluid(src="../img/home_section_nav_4.png", alt="", srcset="")
+							img.img-fluid(src="../img/home_section_nav_5.png", alt="", srcset="")
+					.row.row-hide
+						h2.padding TOP 5 SAN PHẨM
+						.col-md-12.center
+							img.img-fluid.center(src="../img/top5-nav-1.png", alt="", srcset="")
+						.col-md-12.center
+							img.img-fluid.center(src="../img/top5-nav-2.png", alt="", srcset="")
+						.col-md-12.center
+							img.img-fluid.center(src="../img/top5-nav-4.png", alt="", srcset="")
+						.col-md-12.center
+							img.img-fluid.center(src="../img/top5-nav-5.png", alt="", srcset="")
+				.col-md-8
+					.row
+						.carousel-inner
+							.carousel-item.active
+								img.img-fluid(src="../img/home-slide-4.png", alt="", srcset="")
+							.carousel-item
+								img.img-fluid(src="../img/home-slide-4.png", alt="", srcset="")
+							.carousel-item
+								img.img-fluid(src="../img/home-slide-4.png", alt="", srcset="")
+							.carousel-control-prev(href="#demo" data-slide="prev")
+								span.carousel-control-prev-icon
+							.carousel-control-next(href="#demo" data-slide="next")
+								span.carousel-control-next-icon
+					.row
+						-for(i=1;i<13;i++)
+							
+								.col-sm-12.col-md-4.center
+									a(href="http://")
+										img.img-fluid(src="../img/home_shop_"+i+".png", alt="", srcset="")
+									-if(i==1)
+										h2 Nạp Sò
+										p 20.000VND
+									-else if(i==2)
+										h2 Left 4 Dead 2
+										p 326.000vnd
+									-if(i==3)
+										h2 Batteround
+										p 326.000 VND
+									-if(i==4)
+										h2 minecraft
+										p 200.00 VND
+									-if(i==5)
+										h2 Grand To Theft Auto
+										p 230.000 VND
+									-if(i==6)
+										h2 ARK 
+										p 320.000 VND
+									-if(i==7)
+										h2 Nạp Sò
+										p 20.000 VND
+									-if(i==8)
+										h2 Nạp Sò
+										p 20.000 VND
+									-if(i==9)
+										h2 Nạp Sò
+										p 20.000 VND
+									-if(i==10)
+										h2 Nạp Sò
+										p 20.000 VND
+									-if(i==11)
+										h2 Nạp Sò
+										p 20.000 VND
+									-if(i==12)
+										h2 Nạp Sò
+										p 20.000 VND
+									-if(i==13)
+										h2 Nạp Sò
+										p 20.000 VND
+					.row
+						.col-sm-12.col-md-6p-1
+							img(src="", alt="", srcset="")
+						.col-sm-12.col-md-6p-1
+							img(src="", alt="", srcset="")

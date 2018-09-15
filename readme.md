@@ -13,8 +13,9 @@
     Email: baonguyenyam@gmail.com
     URL: fb.com/pham.nguyen.bao.nguyen,
     baonguyenyam.github.io/cv
-    FullStack Vietnam: https://fullstackvietnam.com/
-```
+    FullStack Vietnam: https://fullstackvietnam.com
+	ALL free educaltion: https://AFE.com
+	------------ chỉ sử dụng mới mục đích là học tập và tôn trong người build project nên để vậy không có mục đích lên gg lấy theme------------
 # Cài đặt
 
 > npm i 

@@ -1,67 +1,41 @@
 /////////////////////////////////
 // Phần Slider
 /////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
-			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
-			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+body
+	background-color: $black
+	background-image: url(https://divineshop.vn/image/catalog/home/sgb-5005.png)
+	background-position: top center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	font-family: Roboto
+	color:#fff
+	.wapper-box
+		background: #191919
+		max-width: 1180px
+		margin: 20px auto
+		border-radius: 5px
+		box-shadow: 0 0 10px rgba(0,0,0,.2)
+		margin: 0 auto
+		.padding
+			padding: 0rem 0rem 0rem 1rem
+		img
+			padding: 0rem 0rem 2rem 0rem 
+		.center
+			justify-content: center
+			text-align: center
+			align-items: center
+			padding: 1rem 0rem 0rem 0rem
 
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
+	.row-hide
+		// reposive hide tab giam gia
+		+media-breakpoint-down(md)
+			display: none
 
-.home-clients
-	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+	a:hover
+		color: blue
+		text-decoration: none
+	.center-shop
+		justify-content: center
+		text-align: center
+		align-items: center
