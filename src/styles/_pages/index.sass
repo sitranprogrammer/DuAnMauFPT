@@ -39,3 +39,82 @@ body
 		justify-content: center
 		text-align: center
 		align-items: center
+
+
+=center($direct: row)
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	flex-direction: $direct
+
+=bg-img($scr : "../img/home-slide-3.png", $hi: 200px)
+	background-position: center center
+	background-size: cover
+	min-height: $hi
+	position: relative
+	background-image:  url($scr)
+
+.thanhtam-slider-top
+	.owl-carousel
+		figure
+			margin: 0
+			.bg_1,.bg_2,.bg_3
+				+bg-img("../img/home-slide-2.png", 500px)
+				.title
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 100%
+					display: flex
+					align-items: flex-end
+					color: #fff
+					text-align: center
+					background-image: linear-gradient(transparent 50%, black)
+					.col
+						+center(column)
+						h1
+							font-size: 2.57rem
+							margin-bottom: 1rem
+						p
+							font-size: 1.29rem
+							margin-bottom: 2.5rem
+							width: 95%
+			.bg_2
+				background-image:  url(../img/home-slide-1.png)
+		+media-breakpoint-up(md)
+			figure
+				.bg_1,.bg_2
+					.title
+						.col
+							p
+								width: 48%
+		.owl-nav
+			margin-top: 0
+			button
+				// margin-top: 10px
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				&.owl-prev
+					left: 1rem
+				&.owl-next
+					right: 1rem
+			.fa
+				background: black
+				padding: 1rem
+				color: white
+				font-size: 1.2rem
+				padding: 1rem
+		+media-breakpoint-up(md)
+			.owl-nav
+				.fa
+					&:hover, &:active
+						background: $ngoc
+				button
+					&.owl-prev
+						left: 2.6rem
+					&.owl-next
+						right: 2.6rem
+

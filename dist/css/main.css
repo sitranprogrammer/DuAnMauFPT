@@ -6372,4 +6372,68 @@ body {
     text-align: center;
     align-items: center; }
 
+.thanhtam-slider-top .owl-carousel figure {
+  margin: 0; }
+  .thanhtam-slider-top .owl-carousel figure .bg_1, .thanhtam-slider-top .owl-carousel figure .bg_2, .thanhtam-slider-top .owl-carousel figure .bg_3 {
+    background-position: center center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    background-image: url("../img/home-slide-2.png"); }
+    .thanhtam-slider-top .owl-carousel figure .bg_1 .title, .thanhtam-slider-top .owl-carousel figure .bg_2 .title, .thanhtam-slider-top .owl-carousel figure .bg_3 .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      text-align: center;
+      background-image: linear-gradient(transparent 50%, black); }
+      .thanhtam-slider-top .owl-carousel figure .bg_1 .title .col, .thanhtam-slider-top .owl-carousel figure .bg_2 .title .col, .thanhtam-slider-top .owl-carousel figure .bg_3 .title .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column; }
+        .thanhtam-slider-top .owl-carousel figure .bg_1 .title .col h1, .thanhtam-slider-top .owl-carousel figure .bg_2 .title .col h1, .thanhtam-slider-top .owl-carousel figure .bg_3 .title .col h1 {
+          font-size: 2.57rem;
+          margin-bottom: 1rem; }
+        .thanhtam-slider-top .owl-carousel figure .bg_1 .title .col p, .thanhtam-slider-top .owl-carousel figure .bg_2 .title .col p, .thanhtam-slider-top .owl-carousel figure .bg_3 .title .col p {
+          font-size: 1.29rem;
+          margin-bottom: 2.5rem;
+          width: 95%; }
+  .thanhtam-slider-top .owl-carousel figure .bg_2 {
+    background-image: url(../img/home-slide-1.png); }
+
+@media (min-width: 768px) {
+  .thanhtam-slider-top .owl-carousel figure .bg_1 .title .col p, .thanhtam-slider-top .owl-carousel figure .bg_2 .title .col p {
+    width: 48%; } }
+
+.thanhtam-slider-top .owl-carousel .owl-nav {
+  margin-top: 0; }
+  .thanhtam-slider-top .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .thanhtam-slider-top .owl-carousel .owl-nav button.owl-prev {
+      left: 1rem; }
+    .thanhtam-slider-top .owl-carousel .owl-nav button.owl-next {
+      right: 1rem; }
+  .thanhtam-slider-top .owl-carousel .owl-nav .fa {
+    background: black;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem; }
+
+@media (min-width: 768px) {
+  .thanhtam-slider-top .owl-carousel .owl-nav .fa:hover, .thanhtam-slider-top .owl-carousel .owl-nav .fa:active {
+    background: #17c2a4; }
+  .thanhtam-slider-top .owl-carousel .owl-nav button.owl-prev {
+    left: 2.6rem; }
+  .thanhtam-slider-top .owl-carousel .owl-nav button.owl-next {
+    right: 2.6rem; } }
+
 /*# sourceMappingURL=main.css.map */
