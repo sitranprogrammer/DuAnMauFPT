@@ -6355,7 +6355,8 @@ body {
     body .wapper-box .padding {
       padding: 0rem 0rem 0rem 1rem; }
     body .wapper-box img {
-      padding: 0rem 0rem 2rem 0rem; }
+      margin: 1rem;
+      padding: 2rem 2rem 2rem 0rem; }
     body .wapper-box .center {
       justify-content: center;
       text-align: center;
@@ -6364,13 +6365,19 @@ body {
   @media (max-width: 991.98px) {
     body .row-hide {
       display: none; } }
-  body a:hover {
-    color: blue;
-    text-decoration: none; }
-  body .center-shop {
-    justify-content: center;
-    text-align: center;
-    align-items: center; }
+  body .col-xl-4 {
+    padding-top: 0.75rem; }
+    body .col-xl-4 a {
+      text-decoration: none; }
+      body .col-xl-4 a h2 {
+        color: #DCDDDE; }
+      body .col-xl-4 a p {
+        color: #27CF2D; }
+    body .col-xl-4:hover {
+      -webkit-box-shadow: 0px 0px 0px 5px rgba(39, 207, 45, 0.5);
+      -moz-box-shadow: 0px 0px 0px 5px rgba(39, 207, 45, 0.5);
+      box-shadow: 0px 0px 0px 5px rgba(39, 207, 45, 0.5);
+      text-decoration: none; }
 
 .thanhtam-slider-top .owl-carousel figure {
   margin: 0; }
@@ -6397,6 +6404,10 @@ body {
         align-items: center;
         text-align: center;
         flex-direction: column; }
+        .thanhtam-slider-top .owl-carousel figure .bg_1 .title .col .center-shop, .thanhtam-slider-top .owl-carousel figure .bg_2 .title .col .center-shop, .thanhtam-slider-top .owl-carousel figure .bg_3 .title .col .center-shop {
+          justify-content: center;
+          text-align: center;
+          align-items: center; }
         .thanhtam-slider-top .owl-carousel figure .bg_1 .title .col h1, .thanhtam-slider-top .owl-carousel figure .bg_2 .title .col h1, .thanhtam-slider-top .owl-carousel figure .bg_3 .title .col h1 {
           font-size: 2.57rem;
           margin-bottom: 1rem; }

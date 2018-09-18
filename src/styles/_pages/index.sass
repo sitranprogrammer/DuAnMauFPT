@@ -20,7 +20,8 @@ body
 		.padding
 			padding: 0rem 0rem 0rem 1rem
 		img
-			padding: 0rem 0rem 2rem 0rem 
+			margin: 1rem
+			padding: 2rem 2rem 2rem 0rem 
 		.center
 			justify-content: center
 			text-align: center
@@ -32,21 +33,30 @@ body
 		+media-breakpoint-down(md)
 			display: none
 
-	a:hover
-		color: blue
-		text-decoration: none
-	.center-shop
-		justify-content: center
-		text-align: center
-		align-items: center
-
-
+	.col-xl-4
+		padding-top: 0.75rem
+		a
+			h2
+				color: #DCDDDE
+			p
+				color:#27CF2D
+			text-decoration: none
+		&:hover
+			-webkit-box-shadow: 0px 0px 0px 5px rgba(39,207,45,0.5) 
+			-moz-box-shadow: 0px 0px 0px 5px rgba(39,207,45,0.5) 
+			box-shadow: 0px 0px 0px 5px rgba(39,207,45,0.5) 
+			text-decoration: none
+				
 =center($direct: row)
 	display: flex
 	justify-content: center
 	align-items: center
 	text-align: center
 	flex-direction: $direct
+	.center-shop
+		justify-content: center
+		text-align: center
+		align-items: center
 
 =bg-img($scr : "../img/home-slide-3.png", $hi: 200px)
 	background-position: center center
