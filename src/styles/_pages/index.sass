@@ -17,6 +17,19 @@ body
 		border-radius: 5px
 		box-shadow: 0 0 10px rgba(0,0,0,.2)
 		margin: 0 auto
+		.inline
+			justify-content: center
+			text-align: center
+			.list-group
+				display: -webkit-inline-box
+				li
+					padding: 0.75rem 2.5rem
+			+media-breakpoint-down(md)
+				.list-group
+					display: flex
+					li
+						padding: 2rem 10rem
+
 		.padding
 			padding: 0rem 0rem 0rem 1rem
 		img
@@ -42,10 +55,11 @@ body
 				color:#27CF2D
 			text-decoration: none
 		&:hover
-			-webkit-box-shadow: 0px 0px 0px 5px rgba(39,207,45,0.5) 
-			-moz-box-shadow: 0px 0px 0px 5px rgba(39,207,45,0.5) 
-			box-shadow: 0px 0px 0px 5px rgba(39,207,45,0.5) 
+			-webkit-box-shadow: 0px 0px 0px 2px rgba(39,207,45,0.5) 
+			-moz-box-shadow: 0px 0px 0px 2px rgba(39,207,45,0.5) 
+			box-shadow: 0px 0px 0px 2px rgba(39,207,45,0.5) 
 			text-decoration: none
+		
 
 #PC
 	display: none
@@ -53,7 +67,7 @@ body
 		display: block
 #mobie
 	display: block
-	+media-breakpoint-down(sm)
+	+media-breakpoint-up(md)
 		display: none
 
 
