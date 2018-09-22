@@ -1,0 +1,60 @@
+extends _layout/layout
+
+block variables
+	- var title = 'ADMIN'
+	- var description = 'Dây là trang quản lý website'
+	- var bodyclass = 'admin'
+block body
+	section.wapper-box
+		.header
+			h1 Quản lý game cửa hàng 
+		section
+			.row
+			//- đây là menu
+			.row
+				h2 TRANG QUẢN LÝ DANH MỤC
+			form(action="", method="post")
+				.form.row
+					.col-7
+						input.form-control(type="text", plaintext="tên sản phẩm", name="")
+					.col
+						input.form-control(type="text", plaintext="tên sản phẩm", name="")
+					.col
+						input.form-control(type="text", plaintext="tên sản phẩm", name="")
+					.col 
+						button.btn.btn-danger add
+			.table
+				table.table
+					thead
+						tr
+							th first name
+							th first name
+							th first name
+							th first name
+							th first name
+					tbody
+						tr
+							td joe hart
+							td joe hart	
+							td joe hart
+							td joe hart
+							td joe hart
+						tr
+							td joe hart
+							td joe hart	
+							td joe hart
+							td joe hart
+							td joe hart
+						tr
+							td joe hart
+							td joe hart	
+							td joe hart
+							td joe hart
+							td joe hart
+						tr
+							td joe hart
+							td joe hart	
+							td joe hart
+							td joe hart
+							td joe hart
+						
